@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Marcellus', 'Lora', serif;
+    --font-storybook: 'Lora', Georgia, serif;
+    --font-ui: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-child: 'Fredoka', cursive, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-ui);
+    background-color: #FBF8F2;
+    color: #1F292E;
+  }
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-storybook {
+  font-family: var(--font-storybook);
+}
+
+.font-child {
+  font-family: var(--font-child);
+}
+
+/* Paper texture and book spine styling */
+.book-paper-texture {
+  background-color: #FFFDF9;
+  background-image: 
+    radial-gradient(#E8DFD0 0.75px, transparent 0.75px),
+    radial-gradient(#E8DFD0 0.75px, #FFFDF9 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.book-spine-shadow {
+  box-shadow: 
+    inset 24px 0 32px -16px rgba(13, 92, 88, 0.08),
+    inset -24px 0 32px -16px rgba(13, 92, 88, 0.08);
+}
+
+.book-shadow-3d {
+  box-shadow: 
+    0 20px 40px -15px rgba(28, 43, 41, 0.18),
+    0 4px 12px -2px rgba(28, 43, 41, 0.08),
+    0 0 0 1px rgba(13, 92, 88, 0.06);
+}
+
+.gold-foil-border {
+  border: 1px solid #DFBE72;
+  box-shadow: inset 0 0 0 1px rgba(223, 190, 114, 0.4);
+}
